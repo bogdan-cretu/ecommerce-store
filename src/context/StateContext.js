@@ -4,14 +4,25 @@ import {toast} from 'react-hot-toast'
 const Context = createContext();
 
 export const StateContext = ({children}) =>{
+    const currentCart = JSON.parse(localStorage.getItem('cartItems'))
+    const currentTotalPrice = JSON.parse(localStorage.getItem('totalPrice'))
+    const currentQuantities = JSON.parse(localStorage.getItem('totalQuantities'))
+    
+
     const [showCart, setShowCart] = useState(false)
-    const [cartItems, setCartItems] = useState([])
-    const [totalPrice, setTotalPrice] = useState(0)
-    const [totalQuantities, setTotalQuantities] = useState(0)
+    const [cartItems, setCartItems] = useState(currentCart? currentCart : [])
+    const [totalPrice, setTotalPrice] = useState(currentTotalPrice ? currentTotalPrice : 0)
+    const [totalQuantities, setTotalQuantities] = useState(currentQuantities ? currentQuantities : 0)
     const [qty, setQty] = useState(1)
 
     let foundProduct;
     let index;
+
+    useEffect(() => {
+        localStorage.setItem('cartItems', JSON.stringify(cartItems))
+        localStorage.setItem('totalPrice', JSON.stringify(totalPrice))
+        localStorage.setItem('totalQuantities', JSON.stringify(totalQuantities))
+    }, [cartItems])
 
 
 

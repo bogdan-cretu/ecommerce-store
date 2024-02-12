@@ -1,7 +1,7 @@
 import React, {useRef} from 'react';
 import { AiOutlineMinus, AiOutlinePlus, AiOutlineLeft, AiOutlineShopping } from 'react-icons/ai';
 import {TiDeleteOutline} from 'react-icons/ti'
-import { Toast } from 'react-hot-toast';
+
 import { useStateContext } from '../context/StateContext';
 
 
@@ -60,7 +60,7 @@ const Cart = () => {
             <h3>${totalPrice}</h3>
           </div>
           <div className='btn-container'>
-            <button type='button' className='btn' onClick="">
+            <button type='button' className='btn' onClick={console.log('hi')}>
               Pay with Stripe
             </button>
           </div>
