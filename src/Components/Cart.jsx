@@ -31,7 +31,7 @@ const Cart = () => {
       <div className='product-container'>
       {cartItems.length >= 1 && cartItems.map((item) =>(
         <div className='product' key={item._id}>
-          <img className='cart-product-image' src={"https://cdn.sanity.io/images/63xf4beu/store/" + item.image[0].asset._ref.replace("-png", ".png").replace("-jpg", ".jpg").replace("image-", '')}/>
+          <img className='cart-product-image' alt='' src={"https://cdn.sanity.io/images/63xf4beu/store/" + item.image[0].asset._ref.replace("-png", ".png").replace("-jpg", ".jpg").replace("image-", '')}/>
           <div className='item-desc'>
           <div className='flex top'>
             <h5>{item.name}</h5>
@@ -60,7 +60,7 @@ const Cart = () => {
             <h3>${totalPrice}</h3>
           </div>
           <div className='btn-container'>
-            <button type='button' className='btn' onClick={console.log('hi')}>
+            <button type='button' className='btn'>
               Pay with Stripe
             </button>
           </div>
