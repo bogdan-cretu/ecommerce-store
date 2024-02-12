@@ -4,9 +4,9 @@ import {toast} from 'react-hot-toast'
 const Context = createContext();
 
 export const StateContext = ({children}) =>{
-    const currentCart = JSON.parse(sessionStorage.getItem('cartItems'))
-    const currentTotalPrice = JSON.parse(sessionStorage.getItem('totalPrice'))
-    const currentQuantities = JSON.parse(sessionStorage.getItem('totalQuantities'))
+    const currentCart = JSON.parse(window.localStorage.getItem('cartItems'))
+    const currentTotalPrice = JSON.parse(window.localStorage.getItem('totalPrice'))
+    const currentQuantities = JSON.parse(window.localStorage.getItem('totalQuantities'))
 
     
 
@@ -23,9 +23,9 @@ export const StateContext = ({children}) =>{
     
 
     useEffect(() => {
-        sessionStorage.setItem('cartItems', JSON.stringify(cartItems))
-        sessionStorage.setItem('totalPrice', JSON.stringify(totalPrice))
-        sessionStorage.setItem('totalQuantities', JSON.stringify(totalQuantities))  
+        window.localStorage.setItem('cartItems', JSON.stringify(cartItems))
+        window.localStorage.setItem('totalPrice', JSON.stringify(totalPrice))
+        window.localStorage.setItem('totalQuantities', JSON.stringify(totalQuantities))  
         
 
     }, [cartItems])
