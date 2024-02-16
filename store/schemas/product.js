@@ -18,6 +18,21 @@ export default {
             type: 'string',
         },
         {
+            name: 'category',
+            title: 'Category',
+            type: 'string',
+            initialValue: {
+                title: "Headphones"
+            },
+            options: {
+                list: [
+                    {title: "Headphones", value: "Headphones"},
+                    {title: "TVs", value: "TVs"},
+                    {title: "Phones", value: "Phones"},
+                ]
+            }
+        },
+        {
             name: 'slug',
             title: 'Slug',
             type: 'slug',
@@ -35,6 +50,20 @@ export default {
             name: 'details',
             title: 'Details',
             type: 'string',
+        },
+        {
+            name: 'bestSelling',
+            title: 'Best Selling',
+            type: 'string',
+            initialValue: {
+                title: "No"
+            },
+            options: {
+                list: [
+                    {title: "Yes", value: "Yes"},
+                    {title: "No", value: "No"},
+                ]
+            }
         }
     ]
 }

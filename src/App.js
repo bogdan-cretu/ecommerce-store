@@ -10,6 +10,7 @@ import ProductDetails from './pages/product/slug'
 import None from './pages/none'
 import { StateContext } from './context/StateContext';
 import { Toaster } from 'react-hot-toast';
+import ProductCategories from './Components/ProductCategories';
 
 function  App() {
     return (
@@ -28,6 +29,7 @@ function  App() {
         <div className='products-container'>
           <Product />
         </div>
+          <ProductCategories />
         <FooterBanner />
         </Layout>
         </StateContext>}>

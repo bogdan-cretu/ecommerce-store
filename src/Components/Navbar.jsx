@@ -2,6 +2,7 @@ import React from 'react'
 import {AiOutlineShopping} from 'react-icons/ai';
 import Cart from './Cart'
 import { useStateContext } from '../context/StateContext';
+import gatsbyIconImage from "../media/shoplogo.svg"
 
 
 const Navbar = () => {
@@ -10,7 +11,8 @@ const Navbar = () => {
   return (
     <div className='navbar-container'>
     <p className='logo'>
-      <a href="/"> Headphones</a>
+      <a href="/"> <img alt='' className='logo-image' src={gatsbyIconImage} /> </a>
+      
     </p>
     <button type='button' className='cart-icon' onClick={()=> setShowCart(true)}>
     <AiOutlineShopping />

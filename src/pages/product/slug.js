@@ -1,7 +1,7 @@
 import React, {useState} from 'react'
 import { createClient } from "@sanity/client";
 import { AiOutlineMinus, AiOutlinePlus, AiFillStar, AiOutlineStar } from 'react-icons/ai';
-import Product from '../../Components/Product';
+import RelatedProducts from '../../Components/RelatedProducts';
 import {useStateContext} from '../../context/StateContext.js'
 
 async function getProducts(){
@@ -50,7 +50,7 @@ const ProductDetails = () => {
           </div>
           <div className='small-images-container'>
             {image?.map((item, i)=>(
-               <img  onMouseOver={()=> (setIndex(i))} className='small-image' key={i} src={"https://cdn.sanity.io/images/63xf4beu/store/" + item.asset._ref.replace("-png", ".png").replace("-jpg", ".jpg").replace("image-", '')}></img>
+               <img alt=''  onMouseOver={()=> (setIndex(i))} className='small-image' key={i} src={"https://cdn.sanity.io/images/63xf4beu/store/" + item.asset._ref.replace("-png", ".png").replace("-jpg", ".jpg").replace("image-", '')}></img>
                )
             )}
           </div>
@@ -92,7 +92,9 @@ const ProductDetails = () => {
         <h2>You may also like</h2>
         <div className='marquee'>
           <div className='maylike-products-container track'>
-            <Product />
+            <RelatedProducts 
+              slug = {filteredProduct[0]}
+            />
           </div>
         </div>
       </div>
