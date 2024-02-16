@@ -696,6 +696,15 @@ margin-top: 160px;
 }
 
 @media screen and (max-width:800px) {
+  .categ-holder{
+    display: flex;
+    flex-direction: column;
+  }
+  .categ-content{
+    width: 350px;
+    padding: 5px;
+    
+  }
   .hero-banner-container{
     height: 560px;
   }
