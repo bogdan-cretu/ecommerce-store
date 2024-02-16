@@ -27,7 +27,7 @@ const SearchBar = () => {
         const searchQuery = event.target.value
         if (searchQuery.length >=2){
             setSearch(searchQuery)
-            console.log(search);
+            
         } else{
             setSearch('')
         }

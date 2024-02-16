@@ -58,11 +58,13 @@ const ProductCategories = () => {
                 <img alt='' className='thumbnail-pic' src={"https://cdn.sanity.io/images/63xf4beu/store/" + filteredProduct.image[0].asset._ref.replace("-png", ".png").replace("-jpg", ".jpg").replace("image-", '')}/>
                 </div>
                 <div className='product-desc'>
-                <p>{filteredProduct.name}</p>
+                <p className='product-thumbnail-title'>{filteredProduct.name}</p>
+                <div className='prodct-desc-holder'>
                 <p>${filteredProduct.price}</p>
-                </div>
                 <a href={`/product/${filteredProduct.slug.current}`}> <button className='button'> View details</button></a>
-            </div>
+                </div>
+                </div>
+                </div>
             
         })}
         </div>

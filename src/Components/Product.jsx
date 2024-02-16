@@ -29,8 +29,9 @@ const Product = () => {
       <a href={`/product/${product.slug.current}`}>
       <img alt='' src={image} className="product-image"></img>
       <p className='product-name'>{product.name}</p>
-      <div className='product-price'>${product.price}</div>
       <div className='product-details'>{product.details}</div>
+      <div className='product-price'>${product.price}</div>
+      
       </a>
       
       </div>
