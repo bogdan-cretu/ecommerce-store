@@ -796,7 +796,8 @@ margin-top: 160px;
   }
  
   .search-results{
-    width: 200px
+    width: 200px;
+    height: 200px;
   }
   .left-section{
     display: flex;

@@ -2,3 +2,14 @@
 *.pack
 *.pack
 *.old
+node_modules/.cache/default-development/18.pack
+node_modules/.cache/default-development/17.pack
+node_modules/.cache/default-development/13.pack
+node_modules/.cache/default-development/12.pack
+node_modules/.cache/default-development/1.pack
+node_modules/.cache/default-development/0.pack
+node_modules/.cache/babel-loader/ebbd03a3894990762576751c3da05d326325cee2532dd275792cba57e169d6a0.json
+node_modules/.cache/babel-loader/d8c8e88e17b57bbbb77c9858eedf1400551d541ad552ae6af74f06b76096c205.json
+node_modules/.cache/babel-loader/c604b60ee89b674f972657e7e36a6c46ec7cf43dac67eb565d349ad0ff552220.json
+node_modules/.cache/babel-loader/3b35b4659d7c38d5265359b03cce8f34d528551f05bd5d09bf287016906463f3.json
+node_modules/.cache/babel-loader/133e5070912248de22a14c077b0c34c97a837b19be2ac6d834e64af11b57429a.json
