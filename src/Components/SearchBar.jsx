@@ -51,10 +51,10 @@ const SearchBar = () => {
      })
      
 return <div className='search-bar'>
-    <input type="text" className='search' placeholder='Search...' onChange={captureChange} ></input>
+    <input type="input" className='search' placeholder='Search...' onChange={captureChange} ></input>
     <div className='search-results'>
     {searchItems}
-    <div>{products[0].name}</div>
+    
     </div>
     
 </div>
