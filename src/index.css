@@ -155,6 +155,21 @@ padding: 0px 20px
 .product-thumbnail:hover{
   background-color: white;
 }
+.product-thumbnail-search{
+  border-radius: 20px;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  margin: 10px;
+  align-items: center;
+  border: white 1px solid;
+  width: 90%;
+}
+.product-thumbnail-search:hover{
+  /* border: #a2a2a2 1px solid; */
+  box-shadow: 0px 0px 5px #a2a2a2;
+  /* border-radius: 15px; */
+}
 .button{
   font-weight: 700;
   border-radius: 20px;
@@ -168,6 +183,7 @@ padding: 0px 20px
   margin-bottom: 10px;
   font-weight: 700;
   width: 200px;
+  margin-right: 20px;
   
 }
 .category:hover{
@@ -423,6 +439,11 @@ padding: 20px 10px;
   display: flex;
   justify-content: center;
 }
+.search-image-holder{
+  width: 30%;
+  display: flex;
+  justify-content: center;
+}
 
 .item-desc .flex{
   display: flex;
@@ -507,13 +528,14 @@ padding: 30px 65px;
 
 }
 .image-container{
-  width: 400px;
+  width: auto;
 }
 
 .small-images-container{
   display: flex;
   gap: 10px;
   margin-top: 20px;
+  justify-content: center;
 }
 .small-image{
   border-radius: 8px;
@@ -694,8 +716,58 @@ margin-top: 160px;
 .product-max-qty{
   margin-top: 10px;
 }
+.search-bar{
+  position: relative;
+  z-index: 99;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-wrap: wrap;
+}
 
+.search-results{
+  width: 300px;
+  height: auto;
+  border-radius: 15px;
+  background-color: white;
+  position: absolute;
+  top: 100%;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: 0px 0px 5px #a2a2a2;
+  
+  /* padding-top: 20px; */
+}
+
+.search{
+  width: 300px;
+  border-radius: 15px;
+  height: 30px;
+  padding-left: 15px;
+  position: relative;
+  z-index: 99;
+  
+}
+.search-product-result{
+  display: flex;
+  justify-content: center;
+}
 @media screen and (max-width:800px) {
+  .product-thumbnail-search{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .search{
+    width: 100px;
+  }
+ 
+  .search-results{
+    width: 200px
+  }
   .left-section{
     display: flex;
     flex-wrap: wrap;
@@ -706,6 +778,10 @@ margin-top: 160px;
   }
   .cart-image-holder{
     justify-content: start;
+    width: 20%;
+  }
+  .search-image-holder{
+    
     width: 20%;
   }
   .product-desc{
@@ -784,8 +860,8 @@ margin-top: 160px;
     flex-wrap: wrap;
     }
   .product-detail-container .product-detail-image{
-    width: 350px;
-    height: 350px;
+    max-width: 350px;
+    height: auto;
   }
   .cart-container{
     width: 415px;
