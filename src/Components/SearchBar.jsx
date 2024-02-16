@@ -42,7 +42,7 @@ const SearchBar = () => {
                 <div className='search-image-holder'>
                     <img className='thumbnail-pic' alt='' src={"https://cdn.sanity.io/images/63xf4beu/store/" + item.image[0].asset._ref.replace("-png", ".png").replace("-jpg", ".jpg").replace("image-", '')} />
                 </div>
-                    <p style={{padding:"10px"}}>{item.name}</p>
+                    <p className='product-search-name'>{item.name}</p>
                 </div>
                 </a>
         }
