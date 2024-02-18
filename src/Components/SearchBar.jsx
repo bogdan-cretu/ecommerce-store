@@ -26,7 +26,7 @@ const SearchBar = () => {
     function captureChange(event){
         const searchQuery = event.target.value
         if (searchQuery.length >=2){
-            setSearch(searchQuery)
+            setSearch(searchQuery.toLowerCase())
             
         } else{
             setSearch('')
