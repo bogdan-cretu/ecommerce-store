@@ -776,6 +776,11 @@ margin-top: 160px;
   font-weight: 700;
 }
 @media screen and (max-width:800px) {
+
+  .thumbnail-pic{
+    max-width: 80px;
+  }
+  
   .product-search-name{
     text-align: center;
     padding: 10px;

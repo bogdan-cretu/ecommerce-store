@@ -82,7 +82,6 @@ const ProductDetails = () => {
           </div>
           <div className='buttons'>
             <button type='button' className='add-to-cart' onClick={()=> onAdd(filteredProduct[0], qty)}>Add to Cart</button>
-            <button type='button' className='buy-now' onClick={(()=> console.log("clicked"))}>Buy Now</button>
           </div>
           
           </div>
