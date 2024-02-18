@@ -776,6 +776,15 @@ margin-top: 160px;
   font-weight: 700;
 }
 @media screen and (max-width:800px) {
+  .image-container{
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+  }
+  .product-detail-image{
+    max-height: 300px;
+  }
 
   .thumbnail-pic{
     max-width: 80px;
