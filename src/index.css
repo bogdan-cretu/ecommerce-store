@@ -137,9 +137,13 @@ padding: 0px 20px
 }
 .categ-holder{
   display: flex;
-  margin-top: 150px;
+  margin-top: 40px;
   justify-content: center;
   
+}
+.products-heading{
+  font-size: 40px;
+  font-weight: 800;
 }
 .left{
   margin-right: 40px;
@@ -845,6 +849,7 @@ margin-top: 160px;
   .categ-holder{
     display: flex;
     flex-direction: column;
+    
   }
   .categ-content{
     width: 350px;

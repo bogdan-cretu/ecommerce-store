@@ -29,6 +29,7 @@ function  App() {
         <div className='products-container'>
           <Product />
         </div>
+          <h2 className='products-heading'>All Categories</h2>
           <ProductCategories />
         <FooterBanner />
         </Layout>
